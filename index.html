@@ -1,560 +1,551 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emmanuel Adeniran | Motion Designer — Spring</title>
-  <meta name="description"
-    content="Emmanuel Adeniran (Spring) — 2D & 3D motion design for Fintech, SaaS, Crypto and digital product companies.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<html class="scroll-smooth" lang="en">
+<head><script src="https://cdn.tailwindcss.com"></script><script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        blue: '#0059E2',
+        'blue-deep': '#00348A',
+        yellow: '#FFB000',
+        ink: '#0B0E14',
+        'ink-soft': '#4A5061',
+        line: '#E7EAF3',
+        panel: '#F5F7FC'
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        space: ['Space Grotesk', 'sans-serif']
+      },
+      keyframes: {
+        pulseSpring: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.6)' }
+        },
+        led: {
+          '0%': { boxShadow: '0 0 0 0 rgba(34, 197, 94, .45)' },
+          '70%': { boxShadow: '0 0 0 8px rgba(34, 197, 94, 0)' },
+          '100%': { boxShadow: '0 0 0 0 rgba(34, 197, 94, 0)' }
+        },
+        scroll: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-50%)' }
+        }
+      },
+      animation: {
+        pulseSpring: 'pulseSpring 2.2s cubic-bezier(0.22,1,0.36,1) infinite',
+        led: 'led 2s infinite',
+        scroll: 'scroll 22s linear infinite'
+      }
+    }
+  }
+}
+</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Emmanuel Adeniran | Motion Designer — Spring</title>
+<meta content="Emmanuel Adeniran (Spring) — 2D &amp; 3D motion design for Fintech, SaaS, Crypto and digital product companies." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 </head>
-
-<body>
-
-  <div class="springdot" id="springdot"></div>
-
-  <header>
-    <nav>
-      <a href="#" class="logo"><span class="dot"></span>SPRING.</a>
-      <div class="navlinks">
-        <a href="#reel">Showreel</a>
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#about">About</a>
-        <a href="#reviews">Reviews</a>
-      </div>
-      <a class="navcta" href="https://cal.com/emmanuel-adeniran-discoverycall/30min" target="_blank"
-        rel="noopener">Start a Project →</a>
-    </nav>
-  </header>
-
-  <section class="hero wrap">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <div class="badge"><span class="led"></span>Open for new projects</div>
-        <div class="eyebrow">Motion Designer · Fintech · SaaS · Crypto</div>
-        <h1 class="reveal in">I create motion that helps <em>brands</em> click with <span class="hi">people.</span></h1>
-        <p class="lead">I create 2D &amp; 3D motion design that helps Fintech, SaaS, Crypto, and digital product
+<body class="font-inter font-normal text-white/[.92] bg-ink overflow-x-hidden selection:bg-yellow selection:text-ink">
+<div class="fixed w-[22px] h-[22px] rounded-full border-2 border-blue pointer-events-none z-[9999] -translate-x-1/2 -translate-y-1/2 transition-[width,height,background] duration-[250ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] max-[900px]:hidden" id="springdot"></div>
+<header class="fixed top-0 left-0 right-0 z-[500] bg-ink/[.82] backdrop-blur-[10px] border-b border-white/[.08]">
+<nav class="flex items-center justify-between py-[18px] px-8 max-w-[1180px] mx-auto max-[860px]:py-4 max-[860px]:px-5">
+<a class="no-underline text-inherit font-space font-bold text-[20px] tracking-[-0.01em] flex items-center gap-[6px] text-white" href="#"><span class="w-2 h-2 bg-blue rounded-full inline-block animate-pulseSpring"></span>SPRING.</a>
+<div class="flex gap-[34px] text-[14.5px] font-semibold">
+<a class="no-underline text-inherit" href="#reel">Showreel</a>
+<a class="no-underline text-inherit" href="#services">Services</a>
+<a class="no-underline text-inherit" href="#process">Process</a>
+<a class="no-underline text-inherit" href="#about">About</a>
+<a class="no-underline text-inherit" href="#reviews">Reviews</a>
+</div>
+<a class="no-underline text-inherit bg-blue text-white py-[11px] px-[22px] rounded-full text-sm font-semibold transition-[transform,background] duration-[300ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] inline-block hover:-translate-y-0.5 hover:scale-[1.03] hover:bg-blue-deep" href="https://cal.com/emmanuel-adeniran-discoverycall/30min" rel="noopener" target="_blank">Start a Project →</a>
+</nav>
+</header>
+<section class="before:content-[''] before:absolute before:top-[-200px] before:right-[-160px] before:w-[560px] before:h-[560px] before:bg-[radial-gradient(circle,rgba(0,89,226,.22),transparent_70%)] before:rounded-full before:pointer-events-none max-w-[1180px] mx-auto px-8 max-[640px]:px-5 pt-[170px] pb-[90px] relative overflow-hidden">
+<div class="grid grid-cols-[1.15fr_0.85fr] gap-14 items-center relative max-[900px]:grid-cols-1">
+<div class="hero-copy">
+<div class="inline-flex items-center gap-2 bg-white/[.06] border border-white/[.14] py-[7px] px-4 rounded-full text-[13px] font-semibold text-white/[.85] mb-7"><span class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_0_0_rgba(34,197,94,.5)] animate-led"></span>Open for new projects</div>
+<div class="text-blue font-bold text-sm tracking-[.08em] uppercase mb-[18px]">Motion Designer · Fintech · SaaS · Crypto</div>
+<h1 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[clamp(38px,5.2vw,68px)] opacity-100 translate-y-0">I create motion that helps <em class="not-italic text-blue relative">brands</em> click with <span class="hi not-italic text-blue relative">people.</span></h1>
+<p class="text-[18px] text-white/[.68] max-w-[560px] my-[26px] mb-[38px] leading-[1.65]">I create 2D &amp; 3D motion design that helps Fintech, SaaS, Crypto, and digital product
           companies communicate better and stand out in a crowded digital world — turning complex ideas into stories
           people understand, remember, and engage with.</p>
-        <div class="herobtns">
-          <a class="btn-primary" href="https://cal.com/emmanuel-adeniran-discoverycall/30min" target="_blank"
-            rel="noopener">Book a Discovery Call
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </a>
-          <a class="btn-secondary" href="#reel">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <path d="M8 5v14l11-7L8 5z" fill="currentColor" />
-            </svg>
+<div class="flex gap-4 flex-wrap mb-16">
+<a class="no-underline text-inherit bg-blue text-white py-4 px-[30px] rounded-xl font-bold text-[15px] inline-flex items-center gap-[10px] transition-[transform,box-shadow,background] duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] shadow-[0_8px_26px_-8px_rgba(0,89,226,.6)] hover:-translate-y-1 hover:scale-[1.02] hover:bg-blue-deep hover:shadow-[0_14px_34px_-8px_rgba(0,89,226,.7)]" href="https://cal.com/emmanuel-adeniran-discoverycall/30min" rel="noopener" target="_blank">Book a Discovery Call
+            <svg fill="none" height="16" viewbox="0 0 24 24" width="16">
+<path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
+</svg>
+</a>
+<a class="no-underline text-inherit group bg-transparent text-white py-4 px-[30px] rounded-xl font-bold text-[15px] border-2 border-white/[.5] inline-flex items-center gap-[10px] transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:border-blue hover:bg-blue hover:text-white hover:-translate-y-1 hover:scale-[1.02]" href="#reel">
+<svg class="transition-transform duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-[1.15]" fill="none" height="16" viewbox="0 0 24 24" width="16">
+<path d="M8 5v14l11-7L8 5z" fill="currentColor"></path>
+</svg>
             Watch Showreel
           </a>
-        </div>
-        <div class="stats reveal">
-          <div class="stat">
-            <h3>3+</h3><span>Years Experience</span>
-          </div>
-          <div class="stat">
-            <h3>40+</h3><span>Projects Delivered</span>
-          </div>
-          <div class="stat">
-            <h3>4</h3><span>Industries Served</span>
-          </div>
-          <div class="stat">
-            <h3>2D/3D</h3><span>Full Motion Range</span>
-          </div>
-        </div>
-      </div>
-      <div class="hero-photo reveal">
-        <img src="emmanuel-photo.jpeg" alt="Emmanuel Adeniran">
-        <div class="hero-chip chip-top">3+ Years Experience</div>
-        <div class="hero-chip chip-bottom">40+ Projects Delivered</div>
-      </div>
-    </div>
-  </section>
-
-  <div class="verticals">
-    <div class="vtrack">
-      <span class="on">Fintech</span><span>SaaS</span><span>Crypto</span><span>Web3</span><span>Digital Product</span>
-      <span class="on">Fintech</span><span>SaaS</span><span>Crypto</span><span>Web3</span><span>Digital Product</span>
-      <span class="on">Fintech</span><span>SaaS</span><span>Crypto</span><span>Web3</span><span>Digital Product</span>
-    </div>
-  </div>
-
-  <section id="reel" class="wrap">
-    <div class="sechead reveal">
-      <div>
-        <div class="sectag">Latest Work</div>
-        <h2>2025 Motion Design Showreel.</h2>
-      </div>
-      <p>Product launches, brand campaigns, explainer videos and social content — the range in one place.</p>
-    </div>
-    <div class="reel-frame reveal">
-      <iframe src="https://player.vimeo.com/video/1153595576?title=0&byline=0&portrait=0"
-        title="2025 Motion Design Showreel" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div class="sechead reveal" style="margin-top:64px;margin-bottom:8px;">
-      <div>
-        <div class="sectag">Selected Work</div>
-        <h2>Want to see more? Browse the full portfolio.</h2>
-      </div>
-      <p>Eight projects across explainer, 3D and promotional work — sound on.</p>
-    </div>
-
-    <div class="port-grid">
-      <div class="port-card reveal">
-        <div class="port-video"><iframe src="https://player.vimeo.com/video/1131335134?title=0&byline=0&portrait=0"
-            title="Pocketfi Motion Design" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="port-body">
-          <div class="port-cat">Explainer Video</div>
-          <h4>Pocketfi Motion Design</h4>
-          <p>An explainer piece that breaks Pocketfi's product story down into clear, digestible motion — built so a new
+</div>
+<div class="grid grid-cols-4 gap-0 border-t border-white/[.15] pt-9 max-w-[520px] max-[640px]:grid-cols-2 max-[640px]:gap-y-6">
+<div class="">
+<h3 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[clamp(22px,2.8vw,30px)] text-blue">3+</h3><span class="text-[11.5px] text-white/[.62] font-semibold block mt-1.5 tracking-[.02em]">Years Experience</span>
+</div>
+<div class="">
+<h3 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[clamp(22px,2.8vw,30px)] text-blue">40+</h3><span class="text-[11.5px] text-white/[.62] font-semibold block mt-1.5 tracking-[.02em]">Projects Delivered</span>
+</div>
+<div class="">
+<h3 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[clamp(22px,2.8vw,30px)] text-blue">4</h3><span class="text-[11.5px] text-white/[.62] font-semibold block mt-1.5 tracking-[.02em]">Industries Served</span>
+</div>
+<div class="">
+<h3 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[clamp(22px,2.8vw,30px)] text-blue">2D/3D</h3><span class="text-[11.5px] text-white/[.62] font-semibold block mt-1.5 tracking-[.02em]">Full Motion Range</span>
+</div>
+</div>
+</div>
+<div class="relative rounded-[28px] overflow-hidden aspect-[4/5] shadow-[0_30px_60px_-18px_rgba(0,0,0,.6)] max-[900px]:order-[-1] max-[900px]:max-w-[320px] max-[900px]:mx-auto max-[900px]:mb-6">
+<img alt="Emmanuel Adeniran" class="max-w-full block w-full h-full object-cover" src="emmanuel-photo.jpeg"/>
+<div class="absolute bg-white text-ink py-3 px-[18px] rounded-[14px] font-bold text-[13.5px] shadow-[0_14px_30px_-10px_rgba(0,0,0,.4)] top-5 left-5">3+ Years Experience</div>
+<div class="absolute bg-white text-ink py-3 px-[18px] rounded-[14px] font-bold text-[13.5px] shadow-[0_14px_30px_-10px_rgba(0,0,0,.4)] bottom-5 right-5 bg-blue text-white">40+ Projects Delivered</div>
+</div>
+</div>
+</section>
+<div class="bg-ink py-[22px] overflow-hidden border-y border-white/[.06]">
+<div class="flex gap-[60px] whitespace-nowrap animate-scroll w-max">
+<span class="text-white opacity-[.55] font-semibold text-sm tracking-[.06em] uppercase opacity-100 text-blue opacity-100 text-blue">Fintech</span><span class="text-white opacity-[.55] font-semibold text-sm tracking-[.06em] uppercase">SaaS</span><span class="text-white opacity-[.55] font-semibold text-sm tracking-[.06em] uppercase">Crypto</span><span class="text-white opacity-[.55] font-semibold text-sm tracking-[.06em] uppercase">Web3</span><span class="text-white opacity-[.55] font-semibold text-sm tracking-[.06em] uppercase">Digital Product</span>
+<span class="text-white opacity-[.55] font-semibold text-sm tracking-[.06em] uppercase opacity-100 text-blue opacity-100 text-blue">Fintech</span><span class="text-white opacity-[.55] font-semibold text-sm tracking-[.06em] uppercase">SaaS</span><span class="text-white opacity-[.55] font-semibold text-sm tracking-[.06em] uppercase">Crypto</span><span class="text-white opacity-[.55] font-semibold text-sm tracking-[.06em] uppercase">Web3</span><span class="text-white opacity-[.55] font-semibold text-sm tracking-[.06em] uppercase">Digital Product</span>
+<span class="text-white opacity-[.55] font-semibold text-sm tracking-[.06em] uppercase opacity-100 text-blue opacity-100 text-blue">Fintech</span><span class="text-white opacity-[.55] font-semibold text-sm tracking-[.06em] uppercase">SaaS</span><span class="text-white opacity-[.55] font-semibold text-sm tracking-[.06em] uppercase">Crypto</span><span class="text-white opacity-[.55] font-semibold text-sm tracking-[.06em] uppercase">Web3</span><span class="text-white opacity-[.55] font-semibold text-sm tracking-[.06em] uppercase">Digital Product</span>
+</div>
+</div>
+<section class="max-w-[1180px] mx-auto px-8 max-[640px]:px-5 py-[110px]" id="reel">
+<div class="flex justify-between items-end gap-6 mb-14 flex-wrap">
+<div>
+<div class="text-blue font-bold text-[13px] tracking-[.1em] uppercase mb-[14px]">Latest Work</div>
+<h2 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[clamp(28px,3.6vw,42px)] max-w-[640px]">2025 Motion Design Showreel.</h2>
+</div>
+<p class="text-white/[.6] text-base max-w-[340px] leading-[1.6]">Product launches, brand campaigns, explainer videos and social content — the range in one place.</p>
+</div>
+<div class="relative rounded-[24px] overflow-hidden bg-ink aspect-video shadow-[0_30px_70px_-30px_rgba(0,0,0,.7)] border border-white/[.08]">
+<iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" class="absolute inset-0 w-full h-full border-0" src="https://player.vimeo.com/video/1153595576?title=0&amp;byline=0&amp;portrait=0" title="2025 Motion Design Showreel"></iframe>
+</div>
+<div class="flex justify-between items-end gap-6 mb-14 flex-wrap mt-16 mb-2">
+<div>
+<div class="text-blue font-bold text-[13px] tracking-[.1em] uppercase mb-[14px]">Selected Work</div>
+<h2 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[clamp(28px,3.6vw,42px)] max-w-[640px]">Want to see more? Browse the full portfolio.</h2>
+</div>
+<p class="text-white/[.6] text-base max-w-[340px] leading-[1.6]">Eight projects across explainer, 3D and promotional work — sound on.</p>
+</div>
+<div class="grid grid-cols-2 gap-7 mt-14 max-[760px]:grid-cols-1">
+<div class="border border-white/10 rounded-[18px] overflow-hidden bg-white text-ink transition-[transform,box-shadow] duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5 hover:shadow-[0_26px_50px_-26px_rgba(0,20,60,.5)]">
+<div class="relative aspect-video bg-ink"><iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" class="absolute inset-0 w-full h-full border-0" src="https://player.vimeo.com/video/1131335134?title=0&amp;byline=0&amp;portrait=0" title="Pocketfi Motion Design"></iframe>
+</div>
+<div class="py-[22px] px-6">
+<div class="text-blue font-bold text-xs tracking-[.06em] uppercase mb-2">Explainer Video</div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[17.5px] mb-2">Pocketfi Motion Design</h4>
+<p class="text-[14px] text-ink-soft leading-[1.6]">An explainer piece that breaks Pocketfi's product story down into clear, digestible motion — built so a new
             user gets the value in seconds.</p>
-        </div>
-      </div>
-      <div class="port-card reveal">
-        <div class="port-video"><iframe src="https://player.vimeo.com/video/1131320430?title=0&byline=0&portrait=0"
-            title="Zulipay Card Animation" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="port-body">
-          <div class="port-cat">3D Animation</div>
-          <h4>Zulipay Card Animation</h4>
-          <p>A sleek 3D card render for Zulipay, with lighting and depth that make the card feel tangible on screen.</p>
-        </div>
-      </div>
-      <div class="port-card reveal">
-        <div class="port-video"><iframe src="https://player.vimeo.com/video/1131315617?title=0&byline=0&portrait=0"
-            title="Midescrow Card Animation" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="port-body">
-          <div class="port-cat">3D Animation</div>
-          <h4>Midescrow Card Animation</h4>
-          <p>Dimensional card motion for Midescrow, designed to build trust and polish around a fintech product through
+</div>
+</div>
+<div class="border border-white/10 rounded-[18px] overflow-hidden bg-white text-ink transition-[transform,box-shadow] duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5 hover:shadow-[0_26px_50px_-26px_rgba(0,20,60,.5)]">
+<div class="relative aspect-video bg-ink"><iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" class="absolute inset-0 w-full h-full border-0" src="https://player.vimeo.com/video/1131320430?title=0&amp;byline=0&amp;portrait=0" title="Zulipay Card Animation"></iframe>
+</div>
+<div class="py-[22px] px-6">
+<div class="text-blue font-bold text-xs tracking-[.06em] uppercase mb-2">3D Animation</div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[17.5px] mb-2">Zulipay Card Animation</h4>
+<p class="text-[14px] text-ink-soft leading-[1.6]">A sleek 3D card render for Zulipay, with lighting and depth that make the card feel tangible on screen.</p>
+</div>
+</div>
+<div class="border border-white/10 rounded-[18px] overflow-hidden bg-white text-ink transition-[transform,box-shadow] duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5 hover:shadow-[0_26px_50px_-26px_rgba(0,20,60,.5)]">
+<div class="relative aspect-video bg-ink"><iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" class="absolute inset-0 w-full h-full border-0" src="https://player.vimeo.com/video/1131315617?title=0&amp;byline=0&amp;portrait=0" title="Midescrow Card Animation"></iframe>
+</div>
+<div class="py-[22px] px-6">
+<div class="text-blue font-bold text-xs tracking-[.06em] uppercase mb-2">3D Animation</div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[17.5px] mb-2">Midescrow Card Animation</h4>
+<p class="text-[14px] text-ink-soft leading-[1.6]">Dimensional card motion for Midescrow, designed to build trust and polish around a fintech product through
             realistic 3D rendering.</p>
-        </div>
-      </div>
-      <div class="port-card reveal">
-        <div class="port-video"><iframe src="https://player.vimeo.com/video/1096040194?title=0&byline=0&portrait=0"
-            title="Fixtops Promo Video" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
-        <div class="port-body">
-          <div class="port-cat">Promotional</div>
-          <h4>Fixtops Promo Video</h4>
-          <p>A punchy promotional video for Fixtops, built to grab attention fast and communicate the brand's offer
+</div>
+</div>
+<div class="border border-white/10 rounded-[18px] overflow-hidden bg-white text-ink transition-[transform,box-shadow] duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5 hover:shadow-[0_26px_50px_-26px_rgba(0,20,60,.5)]">
+<div class="relative aspect-video bg-ink"><iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" class="absolute inset-0 w-full h-full border-0" src="https://player.vimeo.com/video/1096040194?title=0&amp;byline=0&amp;portrait=0" title="Fixtops Promo Video"></iframe></div>
+<div class="py-[22px] px-6">
+<div class="text-blue font-bold text-xs tracking-[.06em] uppercase mb-2">Promotional</div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[17.5px] mb-2">Fixtops Promo Video</h4>
+<p class="text-[14px] text-ink-soft leading-[1.6]">A punchy promotional video for Fixtops, built to grab attention fast and communicate the brand's offer
             clearly.</p>
-        </div>
-      </div>
-      <div class="port-card reveal">
-        <div class="port-video"><iframe src="https://player.vimeo.com/video/1063106844?title=0&byline=0&portrait=0"
-            title="Favex Motion Design" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
-        <div class="port-body">
-          <div class="port-cat">Promotional</div>
-          <h4>Favex Motion Design</h4>
-          <p>Brand-forward promotional motion for Favex, blending clean type and color to tell their story with energy.
+</div>
+</div>
+<div class="border border-white/10 rounded-[18px] overflow-hidden bg-white text-ink transition-[transform,box-shadow] duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5 hover:shadow-[0_26px_50px_-26px_rgba(0,20,60,.5)]">
+<div class="relative aspect-video bg-ink"><iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" class="absolute inset-0 w-full h-full border-0" src="https://player.vimeo.com/video/1063106844?title=0&amp;byline=0&amp;portrait=0" title="Favex Motion Design"></iframe></div>
+<div class="py-[22px] px-6">
+<div class="text-blue font-bold text-xs tracking-[.06em] uppercase mb-2">Promotional</div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[17.5px] mb-2">Favex Motion Design</h4>
+<p class="text-[14px] text-ink-soft leading-[1.6]">Brand-forward promotional motion for Favex, blending clean type and color to tell their story with energy.
           </p>
-        </div>
-      </div>
-      <div class="port-card reveal">
-        <div class="port-video"><iframe src="https://player.vimeo.com/video/1055151050?title=0&byline=0&portrait=0"
-            title="Haqabi Wallet App Promo" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="port-body">
-          <div class="port-cat">Promotional</div>
-          <h4>Haqabi Wallet App Promo</h4>
-          <p>A promo piece for Haqabi's wallet app, walking viewers through the experience with smooth, confident
+</div>
+</div>
+<div class="border border-white/10 rounded-[18px] overflow-hidden bg-white text-ink transition-[transform,box-shadow] duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5 hover:shadow-[0_26px_50px_-26px_rgba(0,20,60,.5)]">
+<div class="relative aspect-video bg-ink"><iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" class="absolute inset-0 w-full h-full border-0" src="https://player.vimeo.com/video/1055151050?title=0&amp;byline=0&amp;portrait=0" title="Haqabi Wallet App Promo"></iframe>
+</div>
+<div class="py-[22px] px-6">
+<div class="text-blue font-bold text-xs tracking-[.06em] uppercase mb-2">Promotional</div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[17.5px] mb-2">Haqabi Wallet App Promo</h4>
+<p class="text-[14px] text-ink-soft leading-[1.6]">A promo piece for Haqabi's wallet app, walking viewers through the experience with smooth, confident
             motion.</p>
-        </div>
-      </div>
-      <div class="port-card reveal">
-        <div class="port-video"><iframe src="https://player.vimeo.com/video/1055144039?title=0&byline=0&portrait=0"
-            title="ATW Motion Branding" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
-        <div class="port-body">
-          <div class="port-cat">3D Animation</div>
-          <h4>ATW Motion Branding</h4>
-          <p>3D brand motion for ATW — logo and identity brought to life with depth, light, and movement.</p>
-        </div>
-      </div>
-      <div class="port-card reveal">
-        <div class="port-video"><iframe src="https://player.vimeo.com/video/1055138468?title=0&byline=0&portrait=0"
-            title="Blum Crypto Motion Design" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="port-body">
-          <div class="port-cat">Promotional</div>
-          <h4>Blum Crypto Motion Design</h4>
-          <p>Crypto-native promotional motion for Blum, designed to build trust and clarity around a Web3 product.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="services" class="wrap">
-    <div class="sechead reveal">
-      <div>
-        <div class="sectag">What I Do</div>
-        <h2>Every type of motion your product needs.</h2>
-      </div>
-      <p>From first concept to final render — clean, strategic animation built to do a job.</p>
-    </div>
-    <div class="svc-grid reveal">
-      <div class="svc"><span class="num">01</span>
-        <h3>Product Demos</h3>
-        <p>Walkthroughs that put your product in its best light — animated to highlight value and make signing up feel
+</div>
+</div>
+<div class="border border-white/10 rounded-[18px] overflow-hidden bg-white text-ink transition-[transform,box-shadow] duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5 hover:shadow-[0_26px_50px_-26px_rgba(0,20,60,.5)]">
+<div class="relative aspect-video bg-ink"><iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" class="absolute inset-0 w-full h-full border-0" src="https://player.vimeo.com/video/1055144039?title=0&amp;byline=0&amp;portrait=0" title="ATW Motion Branding"></iframe></div>
+<div class="py-[22px] px-6">
+<div class="text-blue font-bold text-xs tracking-[.06em] uppercase mb-2">3D Animation</div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[17.5px] mb-2">ATW Motion Branding</h4>
+<p class="text-[14px] text-ink-soft leading-[1.6]">3D brand motion for ATW — logo and identity brought to life with depth, light, and movement.</p>
+</div>
+</div>
+<div class="border border-white/10 rounded-[18px] overflow-hidden bg-white text-ink transition-[transform,box-shadow] duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5 hover:shadow-[0_26px_50px_-26px_rgba(0,20,60,.5)]">
+<div class="relative aspect-video bg-ink"><iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" class="absolute inset-0 w-full h-full border-0" src="https://player.vimeo.com/video/1055138468?title=0&amp;byline=0&amp;portrait=0" title="Blum Crypto Motion Design"></iframe>
+</div>
+<div class="py-[22px] px-6">
+<div class="text-blue font-bold text-xs tracking-[.06em] uppercase mb-2">Promotional</div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[17.5px] mb-2">Blum Crypto Motion Design</h4>
+<p class="text-[14px] text-ink-soft leading-[1.6]">Crypto-native promotional motion for Blum, designed to build trust and clarity around a Web3 product.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-[1180px] mx-auto px-8 max-[640px]:px-5 py-[110px]" id="services">
+<div class="flex justify-between items-end gap-6 mb-14 flex-wrap">
+<div>
+<div class="text-blue font-bold text-[13px] tracking-[.1em] uppercase mb-[14px]">What I Do</div>
+<h2 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[clamp(28px,3.6vw,42px)] max-w-[640px]">Every type of motion your product needs.</h2>
+</div>
+<p class="text-white/[.6] text-base max-w-[340px] leading-[1.6]">From first concept to final render — clean, strategic animation built to do a job.</p>
+</div>
+<div class="grid grid-cols-3 gap-[2px] bg-white/[.15] border border-white/[.15] rounded-[20px] overflow-hidden max-[900px]:grid-cols-2 max-[640px]:grid-cols-1">
+<div class="bg-white text-ink py-[38px] px-8 transition-colors duration-[350ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-panel"><span class="text-blue font-extrabold text-sm tracking-[.05em] mb-[22px] block">01</span>
+<h3 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-xl mb-2.5">Product Demos</h3>
+<p class="text-[14.5px] text-ink-soft leading-[1.65]">Walkthroughs that put your product in its best light — animated to highlight value and make signing up feel
           obvious.</p>
-      </div>
-      <div class="svc"><span class="num">02</span>
-        <h3>Explainer Videos</h3>
-        <p>Got something hard to explain? I turn it into a clear visual story your audience understands the first time.
+</div>
+<div class="bg-white text-ink py-[38px] px-8 transition-colors duration-[350ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-panel"><span class="text-blue font-extrabold text-sm tracking-[.05em] mb-[22px] block">02</span>
+<h3 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-xl mb-2.5">Explainer Videos</h3>
+<p class="text-[14.5px] text-ink-soft leading-[1.65]">Got something hard to explain? I turn it into a clear visual story your audience understands the first time.
         </p>
-      </div>
-      <div class="svc"><span class="num">03</span>
-        <h3>Promotional Videos</h3>
-        <p>Launch films, announcements and campaign content built to stop the scroll and turn viewers into users.</p>
-      </div>
-      <div class="svc"><span class="num">04</span>
-        <h3>Brand Motion Design</h3>
-        <p>Logos, intros, lower thirds and branded assets — the visual language that keeps your brand cohesive
+</div>
+<div class="bg-white text-ink py-[38px] px-8 transition-colors duration-[350ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-panel"><span class="text-blue font-extrabold text-sm tracking-[.05em] mb-[22px] block">03</span>
+<h3 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-xl mb-2.5">Promotional Videos</h3>
+<p class="text-[14.5px] text-ink-soft leading-[1.65]">Launch films, announcements and campaign content built to stop the scroll and turn viewers into users.</p>
+</div>
+<div class="bg-white text-ink py-[38px] px-8 transition-colors duration-[350ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-panel"><span class="text-blue font-extrabold text-sm tracking-[.05em] mb-[22px] block">04</span>
+<h3 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-xl mb-2.5">Brand Motion Design</h3>
+<p class="text-[14.5px] text-ink-soft leading-[1.65]">Logos, intros, lower thirds and branded assets — the visual language that keeps your brand cohesive
           everywhere it shows up.</p>
-      </div>
-      <div class="svc"><span class="num">05</span>
-        <h3>UI/UX Animation</h3>
-        <p>Purposeful micro-interactions that bring your interface to life and make fintech and SaaS products feel
+</div>
+<div class="bg-white text-ink py-[38px] px-8 transition-colors duration-[350ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-panel"><span class="text-blue font-extrabold text-sm tracking-[.05em] mb-[22px] block">05</span>
+<h3 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-xl mb-2.5">UI/UX Animation</h3>
+<p class="text-[14.5px] text-ink-soft leading-[1.65]">Purposeful micro-interactions that bring your interface to life and make fintech and SaaS products feel
           premium.</p>
-      </div>
-      <div class="svc"><span class="num">06</span>
-        <h3>2D &amp; 3D Animation</h3>
-        <p>Flat and punchy, or dimensional and cinematic — I work in both worlds and know exactly which fits your
+</div>
+<div class="bg-white text-ink py-[38px] px-8 transition-colors duration-[350ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-panel"><span class="text-blue font-extrabold text-sm tracking-[.05em] mb-[22px] block">06</span>
+<h3 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-xl mb-2.5">2D &amp; 3D Animation</h3>
+<p class="text-[14.5px] text-ink-soft leading-[1.65]">Flat and punchy, or dimensional and cinematic — I work in both worlds and know exactly which fits your
           message.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="process" class="wrap">
-    <div class="sechead reveal">
-      <div>
-        <div class="sectag">How It Works</div>
-        <h2>A clear process, start to delivery.</h2>
-      </div>
-      <p>Transparent steps that keep you in the loop without drowning you in decisions.</p>
-    </div>
-    <div class="steps reveal">
-      <div class="step">
-        <div class="sn">01</div>
-        <div>
-          <h4>Discovery Call</h4>
-          <p>Your product, your audience, what this video needs to accomplish — total clarity on the goal before a
+</div>
+</div>
+</section>
+<section class="bg-ink text-white max-w-[1180px] mx-auto px-8 max-[640px]:px-5 py-[110px]" id="process">
+<div class="flex justify-between items-end gap-6 mb-14 flex-wrap">
+<div>
+<div class="text-yellow text-blue font-bold text-[13px] tracking-[.1em] uppercase mb-[14px]">How It Works</div>
+<h2 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[clamp(28px,3.6vw,42px)] max-w-[640px]">A clear process, start to delivery.</h2>
+</div>
+<p class="text-white/[.6] text-base max-w-[340px] leading-[1.6] text-white/[.55]">Transparent steps that keep you in the loop without drowning you in decisions.</p>
+</div>
+<div class="flex flex-col">
+<div class="group grid grid-cols-[90px_1fr] gap-7 py-[30px] border-t border-white/[.12] items-start">
+<div class="group-hover:text-yellow group-hover:transition-colors group-hover:duration-300 text-[15px] font-bold text-blue">01</div>
+<div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[19px] mb-2 text-white">Discovery Call</h4>
+<p class="text-white/[.6] text-[14.5px] leading-[1.6] max-w-[560px]">Your product, your audience, what this video needs to accomplish — total clarity on the goal before a
             single frame moves.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="sn">02</div>
-        <div>
-          <h4>Concept &amp; Moodboard</h4>
-          <p>Gathering visual reference and direction to set the tone for the project.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="sn">03</div>
-        <div>
-          <h4>Storyboard</h4>
-          <p>The story mapped and visuals locked. You review and approve before anything is animated.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="sn">04</div>
-        <div>
-          <h4>Styleframes</h4>
-          <p>Key frames that establish the visual style, so there are no surprises mid-project.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="sn">05</div>
-        <div>
-          <h4>Animation</h4>
-          <p>Every scene built on-brand and purposeful — this is where the work becomes motion.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="sn">06</div>
-        <div>
-          <h4>Sound Design</h4>
-          <p>Audio elements layered in to give the animation weight and rhythm.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="sn">07</div>
-        <div>
-          <h4>Feedback &amp; Delivery</h4>
-          <p>Clean source files and exports, on time — with revision rounds built in.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="wrap">
-    <div class="about-grid">
-      <div class="about-photo reveal">
-        <img src="emmanuel-photo.jpeg" alt="Emmanuel Adeniran">
-        <span class="tag">Founder, Spring</span>
-      </div>
-      <div class="about-copy reveal">
-        <div class="sectag">The Person Behind It</div>
-        <h2 style="font-size:clamp(28px,3.6vw,40px);margin-bottom:20px;">I'm Emmanuel Adeniran.</h2>
-        <p>I create <strong>2D &amp; 3D motion design</strong> that helps Fintech, SaaS, Crypto, and digital product
+</div>
+</div>
+<div class="group grid grid-cols-[90px_1fr] gap-7 py-[30px] border-t border-white/[.12] items-start">
+<div class="group-hover:text-yellow group-hover:transition-colors group-hover:duration-300 text-[15px] font-bold text-blue">02</div>
+<div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[19px] mb-2 text-white">Concept &amp; Moodboard</h4>
+<p class="text-white/[.6] text-[14.5px] leading-[1.6] max-w-[560px]">Gathering visual reference and direction to set the tone for the project.</p>
+</div>
+</div>
+<div class="group grid grid-cols-[90px_1fr] gap-7 py-[30px] border-t border-white/[.12] items-start">
+<div class="group-hover:text-yellow group-hover:transition-colors group-hover:duration-300 text-[15px] font-bold text-blue">03</div>
+<div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[19px] mb-2 text-white">Storyboard</h4>
+<p class="text-white/[.6] text-[14.5px] leading-[1.6] max-w-[560px]">The story mapped and visuals locked. You review and approve before anything is animated.</p>
+</div>
+</div>
+<div class="group grid grid-cols-[90px_1fr] gap-7 py-[30px] border-t border-white/[.12] items-start">
+<div class="group-hover:text-yellow group-hover:transition-colors group-hover:duration-300 text-[15px] font-bold text-blue">04</div>
+<div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[19px] mb-2 text-white">Styleframes</h4>
+<p class="text-white/[.6] text-[14.5px] leading-[1.6] max-w-[560px]">Key frames that establish the visual style, so there are no surprises mid-project.</p>
+</div>
+</div>
+<div class="group grid grid-cols-[90px_1fr] gap-7 py-[30px] border-t border-white/[.12] items-start">
+<div class="group-hover:text-yellow group-hover:transition-colors group-hover:duration-300 text-[15px] font-bold text-blue">05</div>
+<div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[19px] mb-2 text-white">Animation</h4>
+<p class="text-white/[.6] text-[14.5px] leading-[1.6] max-w-[560px]">Every scene built on-brand and purposeful — this is where the work becomes motion.</p>
+</div>
+</div>
+<div class="group grid grid-cols-[90px_1fr] gap-7 py-[30px] border-t border-white/[.12] items-start">
+<div class="group-hover:text-yellow group-hover:transition-colors group-hover:duration-300 text-[15px] font-bold text-blue">06</div>
+<div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[19px] mb-2 text-white">Sound Design</h4>
+<p class="text-white/[.6] text-[14.5px] leading-[1.6] max-w-[560px]">Audio elements layered in to give the animation weight and rhythm.</p>
+</div>
+</div>
+<div class="group grid grid-cols-[90px_1fr] gap-7 py-[30px] border-t border-white/[.12] items-start">
+<div class="group-hover:text-yellow group-hover:transition-colors group-hover:duration-300 text-[15px] font-bold text-blue">07</div>
+<div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[19px] mb-2 text-white">Feedback &amp; Delivery</h4>
+<p class="text-white/[.6] text-[14.5px] leading-[1.6] max-w-[560px]">Clean source files and exports, on time — with revision rounds built in.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-[1180px] mx-auto px-8 max-[640px]:px-5 py-[110px]" id="about">
+<div class="grid grid-cols-[.85fr_1.15fr] gap-16 items-center">
+<div class="relative rounded-[24px] overflow-hidden aspect-[4/5] bg-gradient-to-br from-blue-deep to-ink flex items-center justify-center shadow-[0_30px_60px_-20px_rgba(0,20,60,.5)]">
+<img alt="Emmanuel Adeniran" class="max-w-full block w-full h-full object-cover" src="emmanuel-photo.jpeg"/>
+<span class="absolute bottom-[22px] left-[22px] bg-blue text-white py-2.5 px-[18px] rounded-xl font-bold text-[13.5px]">Founder, Spring</span>
+</div>
+<div class="">
+<div class="text-blue font-bold text-[13px] tracking-[.1em] uppercase mb-[14px]">The Person Behind It</div>
+<h2 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[clamp(28px,3.6vw,40px)] mb-5">I'm Emmanuel Adeniran.</h2>
+<p class="text-white/[.8] text-[16.5px] leading-[1.75] mb-[18px]">I create <strong class="text-white">2D &amp; 3D motion design</strong> that helps Fintech, SaaS, Crypto, and digital product
           companies communicate better and stand out in a crowded digital world.</p>
-        <p>From product launches and brand campaigns to explainer videos and social content, I turn complex ideas into
-          compelling visual stories that people <strong>understand, remember, and engage with</strong>.</p>
-        <p>With <strong>3+ years of experience</strong> and <strong>40+ projects delivered</strong>, I combine design,
+<p class="text-white/[.8] text-[16.5px] leading-[1.75] mb-[18px]">From product launches and brand campaigns to explainer videos and social content, I turn complex ideas into
+          compelling visual stories that people <strong class="text-white">understand, remember, and engage with</strong>.</p>
+<p class="text-white/[.8] text-[16.5px] leading-[1.75] mb-[18px]">With <strong class="text-white">3+ years of experience</strong> and <strong class="text-white">40+ projects delivered</strong>, I combine design,
           animation, and storytelling to create motion that looks great and serves a purpose.</p>
-        <div class="tools">
-          <span>After
-            Effects</span><span>Blender</span><span>Illustrator</span><span>Photoshop</span><span>Figma</span><span>Premiere
+<div class="flex gap-3 flex-wrap mt-7">
+<span class="bg-white/10 border border-white/[.22] py-[9px] px-4 rounded-full text-[13.5px] font-semibold text-white/[.85]">After
+            Effects</span><span class="bg-white/10 border border-white/[.22] py-[9px] px-4 rounded-full text-[13.5px] font-semibold text-white/[.85]">Blender</span><span class="bg-white/10 border border-white/[.22] py-[9px] px-4 rounded-full text-[13.5px] font-semibold text-white/[.85]">Illustrator</span><span class="bg-white/10 border border-white/[.22] py-[9px] px-4 rounded-full text-[13.5px] font-semibold text-white/[.85]">Photoshop</span><span class="bg-white/10 border border-white/[.22] py-[9px] px-4 rounded-full text-[13.5px] font-semibold text-white/[.85]">Figma</span><span class="bg-white/10 border border-white/[.22] py-[9px] px-4 rounded-full text-[13.5px] font-semibold text-white/[.85]">Premiere
             Pro</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="why">
-    <div class="wrap">
-      <div class="sechead reveal">
-        <div>
-          <div class="sectag">Why Clients Choose Me</div>
-          <h2>More than pretty pixels.</h2>
-        </div>
-        <p>Motion built to do something for your brand — looking great is the bonus.</p>
-      </div>
-      <div class="why-grid reveal">
-        <div class="why-card">
-          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M12 2v20M2 12h20" stroke="white" stroke-width="2" stroke-linecap="round" />
-            </svg></div>
-          <h4>Built for Results</h4>
-          <p>Every animation is designed to do something — drive sign-ups, explain a product, make a launch land.</p>
-        </div>
-        <div class="why-card">
-          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <circle cx="12" cy="12" r="9" stroke="white" stroke-width="2" />
-            </svg></div>
-          <h4>Fintech &amp; Crypto Fluent</h4>
-          <p>I know how to explain complex financial and Web3 products in ways non-technical audiences trust.</p>
-        </div>
-        <div class="why-card">
-          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M4 12l6 6L20 6" stroke="white" stroke-width="2.2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg></div>
-          <h4>Straight-Talking</h4>
-          <p>Clear timelines and honest updates throughout — you always know where your project stands.</p>
-        </div>
-        <div class="why-card">
-          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2L12 16.4 5.7 20.8 8 13.6 2 9.2h7.6z" fill="white" />
-            </svg></div>
-          <h4>Full Accountability</h4>
-          <p>I run every project personally — no hand-offs, no juniors, full ownership from concept to final file.</p>
-        </div>
-        <div class="why-card">
-          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <rect x="4" y="4" width="16" height="16" rx="3" stroke="white" stroke-width="2" />
-            </svg></div>
-          <h4>You Own Everything</h4>
-          <p>Source files and exports are yours permanently — your video, your asset, your call.</p>
-        </div>
-        <div class="why-card">
-          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" fill="white" />
-            </svg></div>
-          <h4>Fast, No Shortcuts</h4>
-          <p>Tight process, studio-quality output, efficient turnaround — your launch date matters to me too.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="reviews" class="wrap">
-    <div class="sechead reveal">
-      <div>
-        <div class="sectag">Client Reviews</div>
-        <h2>Words from real clients.</h2>
-      </div>
-      <p>Screenshots straight from the chat thread — dropped in as they come.</p>
-    </div>
-    <div class="test-grid reveal">
-      <div class="test-card">
-        <span class="test-src"><svg width="14" height="14" viewBox="0 0 24 24" fill="#25D366">
-            <path
-              d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.6-1.28 1.15-1.77 1.2-.45.05-1 .07-1.62-.1-.37-.1-.85-.27-1.46-.53-2.57-1.11-4.24-3.73-4.37-3.9-.13-.17-1.05-1.4-1.05-2.67 0-1.27.66-1.9.9-2.15.24-.26.52-.32.7-.32h.5c.16 0 .38-.02.58.45.22.53.75 1.82.82 1.95.07.13.11.29.02.46-.09.17-.14.28-.27.43-.14.15-.28.34-.4.46-.14.14-.28.29-.12.56.15.28.68 1.13 1.47 1.83 1.01.9 1.86 1.19 2.13 1.32.27.13.43.11.6-.07.16-.17.68-.8.86-1.07.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.27.13.44.2.5.31.08.13.08.7-.14 1.3z" />
-          </svg>WhatsApp</span>
-        <p class="test-quote">"Thanks so much for your patience during this project, we are hoping to work with you on
+</div>
+</div>
+</div>
+</section>
+<section class="py-[110px]" id="why">
+<div class="max-w-[1180px] mx-auto px-8 max-[640px]:px-5">
+<div class="flex justify-between items-end gap-6 mb-14 flex-wrap">
+<div>
+<div class="text-blue font-bold text-[13px] tracking-[.1em] uppercase mb-[14px]">Why Clients Choose Me</div>
+<h2 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[clamp(28px,3.6vw,42px)] max-w-[640px]">More than pretty pixels.</h2>
+</div>
+<p class="text-white/[.6] text-base max-w-[340px] leading-[1.6]">Motion built to do something for your brand — looking great is the bonus.</p>
+</div>
+<div class="grid grid-cols-3 gap-6 max-[860px]:grid-cols-2 max-[640px]:grid-cols-1">
+<div class="bg-white text-ink border border-white/10 rounded-[18px] p-8 px-7 transition-[transform,box-shadow,border-color] duration-[400ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-2 hover:shadow-[0_24px_50px_-24px_rgba(0,20,60,.5)] hover:border-blue">
+<div class="w-11 h-11 rounded-xl bg-blue flex items-center justify-center mb-[18px]"><svg fill="none" height="20" viewbox="0 0 24 24" width="20">
+<path d="M12 2v20M2 12h20" stroke="white" stroke-linecap="round" stroke-width="2"></path>
+</svg></div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[17.5px] mb-2.5">Built for Results</h4>
+<p class="text-sm text-ink-soft leading-[1.6]">Every animation is designed to do something — drive sign-ups, explain a product, make a launch land.</p>
+</div>
+<div class="bg-white text-ink border border-white/10 rounded-[18px] p-8 px-7 transition-[transform,box-shadow,border-color] duration-[400ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-2 hover:shadow-[0_24px_50px_-24px_rgba(0,20,60,.5)] hover:border-blue">
+<div class="w-11 h-11 rounded-xl bg-blue flex items-center justify-center mb-[18px]"><svg fill="none" height="20" viewbox="0 0 24 24" width="20">
+<circle cx="12" cy="12" r="9" stroke="white" stroke-width="2"></circle>
+</svg></div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[17.5px] mb-2.5">Fintech &amp; Crypto Fluent</h4>
+<p class="text-sm text-ink-soft leading-[1.6]">I know how to explain complex financial and Web3 products in ways non-technical audiences trust.</p>
+</div>
+<div class="bg-white text-ink border border-white/10 rounded-[18px] p-8 px-7 transition-[transform,box-shadow,border-color] duration-[400ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-2 hover:shadow-[0_24px_50px_-24px_rgba(0,20,60,.5)] hover:border-blue">
+<div class="w-11 h-11 rounded-xl bg-blue flex items-center justify-center mb-[18px]"><svg fill="none" height="20" viewbox="0 0 24 24" width="20">
+<path d="M4 12l6 6L20 6" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
+</svg></div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[17.5px] mb-2.5">Straight-Talking</h4>
+<p class="text-sm text-ink-soft leading-[1.6]">Clear timelines and honest updates throughout — you always know where your project stands.</p>
+</div>
+<div class="bg-white text-ink border border-white/10 rounded-[18px] p-8 px-7 transition-[transform,box-shadow,border-color] duration-[400ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-2 hover:shadow-[0_24px_50px_-24px_rgba(0,20,60,.5)] hover:border-blue">
+<div class="w-11 h-11 rounded-xl bg-blue flex items-center justify-center mb-[18px]"><svg fill="none" height="20" viewbox="0 0 24 24" width="20">
+<path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2L12 16.4 5.7 20.8 8 13.6 2 9.2h7.6z" fill="white"></path>
+</svg></div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[17.5px] mb-2.5">Full Accountability</h4>
+<p class="text-sm text-ink-soft leading-[1.6]">I run every project personally — no hand-offs, no juniors, full ownership from concept to final file.</p>
+</div>
+<div class="bg-white text-ink border border-white/10 rounded-[18px] p-8 px-7 transition-[transform,box-shadow,border-color] duration-[400ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-2 hover:shadow-[0_24px_50px_-24px_rgba(0,20,60,.5)] hover:border-blue">
+<div class="w-11 h-11 rounded-xl bg-blue flex items-center justify-center mb-[18px]"><svg fill="none" height="20" viewbox="0 0 24 24" width="20">
+<rect height="16" rx="3" stroke="white" stroke-width="2" width="16" x="4" y="4"></rect>
+</svg></div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[17.5px] mb-2.5">You Own Everything</h4>
+<p class="text-sm text-ink-soft leading-[1.6]">Source files and exports are yours permanently — your video, your asset, your call.</p>
+</div>
+<div class="bg-white text-ink border border-white/10 rounded-[18px] p-8 px-7 transition-[transform,box-shadow,border-color] duration-[400ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-2 hover:shadow-[0_24px_50px_-24px_rgba(0,20,60,.5)] hover:border-blue">
+<div class="w-11 h-11 rounded-xl bg-blue flex items-center justify-center mb-[18px]"><svg fill="none" height="20" viewbox="0 0 24 24" width="20">
+<path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" fill="white"></path>
+</svg></div>
+<h4 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[17.5px] mb-2.5">Fast, No Shortcuts</h4>
+<p class="text-sm text-ink-soft leading-[1.6]">Tight process, studio-quality output, efficient turnaround — your launch date matters to me too.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-[1180px] mx-auto px-8 max-[640px]:px-5 py-[110px]" id="reviews">
+<div class="flex justify-between items-end gap-6 mb-14 flex-wrap">
+<div>
+<div class="text-blue font-bold text-[13px] tracking-[.1em] uppercase mb-[14px]">Client Reviews</div>
+<h2 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[clamp(28px,3.6vw,42px)] max-w-[640px]">Words from real clients.</h2>
+</div>
+<p class="text-white/[.6] text-base max-w-[340px] leading-[1.6]">Screenshots straight from the chat thread — dropped in as they come.</p>
+</div>
+<div class="grid grid-cols-3 gap-[22px] max-[860px]:grid-cols-2 max-[640px]:grid-cols-1">
+<div class="border border-white/10 rounded-[18px] p-[26px] bg-white text-ink flex flex-col gap-4 transition-transform duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5">
+<span class="text-[11.5px] font-bold text-blue uppercase tracking-[.06em] inline-flex items-center gap-1.5"><svg class="shrink-0" fill="#25D366" height="14" viewbox="0 0 24 24" width="14">
+<path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.6-1.28 1.15-1.77 1.2-.45.05-1 .07-1.62-.1-.37-.1-.85-.27-1.46-.53-2.57-1.11-4.24-3.73-4.37-3.9-.13-.17-1.05-1.4-1.05-2.67 0-1.27.66-1.9.9-2.15.24-.26.52-.32.7-.32h.5c.16 0 .38-.02.58.45.22.53.75 1.82.82 1.95.07.13.11.29.02.46-.09.17-.14.28-.27.43-.14.15-.28.34-.4.46-.14.14-.28.29-.12.56.15.28.68 1.13 1.47 1.83 1.01.9 1.86 1.19 2.13 1.32.27.13.43.11.6-.07.16-.17.68-.8.86-1.07.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.27.13.44.2.5.31.08.13.08.7-.14 1.3z"></path>
+</svg>WhatsApp</span>
+<p class="text-[15px] text-ink leading-[1.65] flex-grow">"Thanks so much for your patience during this project, we are hoping to work with you on
           more projects. Great work."</p>
-        <div class="test-who">
-          <div class="test-avatar">BR</div>
-          <div>
-            <div class="test-name">Bukunmi Robert</div>
-            <div class="test-role">Client</div>
-          </div>
-        </div>
-      </div>
-      <div class="test-card">
-        <span class="test-src"><svg width="14" height="14" viewBox="0 0 24 24" fill="#25D366">
-            <path
-              d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.6-1.28 1.15-1.77 1.2-.45.05-1 .07-1.62-.1-.37-.1-.85-.27-1.46-.53-2.57-1.11-4.24-3.73-4.37-3.9-.13-.17-1.05-1.4-1.05-2.67 0-1.27.66-1.9.9-2.15.24-.26.52-.32.7-.32h.5c.16 0 .38-.02.58.45.22.53.75 1.82.82 1.95.07.13.11.29.02.46-.09.17-.14.28-.27.43-.14.15-.28.34-.4.46-.14.14-.28.29-.12.56.15.28.68 1.13 1.47 1.83 1.01.9 1.86 1.19 2.13 1.32.27.13.43.11.6-.07.16-.17.68-.8.86-1.07.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.27.13.44.2.5.31.08.13.08.7-.14 1.3z" />
-          </svg>WhatsApp</span>
-        <p class="test-quote">"This came out perfect — exactly what we were looking for. Thank you very much for the
+<div class="flex items-center gap-3 mt-1">
+<div class="w-[42px] h-[42px] rounded-full bg-blue text-white flex items-center justify-center font-bold text-sm shrink-0">BR</div>
+<div>
+<div class="font-bold text-[14.5px]">Bukunmi Robert</div>
+<div class="text-[12.5px] text-ink-soft">Client</div>
+</div>
+</div>
+</div>
+<div class="border border-white/10 rounded-[18px] p-[26px] bg-white text-ink flex flex-col gap-4 transition-transform duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5">
+<span class="text-[11.5px] font-bold text-blue uppercase tracking-[.06em] inline-flex items-center gap-1.5"><svg class="shrink-0" fill="#25D366" height="14" viewbox="0 0 24 24" width="14">
+<path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.6-1.28 1.15-1.77 1.2-.45.05-1 .07-1.62-.1-.37-.1-.85-.27-1.46-.53-2.57-1.11-4.24-3.73-4.37-3.9-.13-.17-1.05-1.4-1.05-2.67 0-1.27.66-1.9.9-2.15.24-.26.52-.32.7-.32h.5c.16 0 .38-.02.58.45.22.53.75 1.82.82 1.95.07.13.11.29.02.46-.09.17-.14.28-.27.43-.14.15-.28.34-.4.46-.14.14-.28.29-.12.56.15.28.68 1.13 1.47 1.83 1.01.9 1.86 1.19 2.13 1.32.27.13.43.11.6-.07.16-.17.68-.8.86-1.07.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.27.13.44.2.5.31.08.13.08.7-.14 1.3z"></path>
+</svg>WhatsApp</span>
+<p class="text-[15px] text-ink leading-[1.65] flex-grow">"This came out perfect — exactly what we were looking for. Thank you very much for the
           great work on the Xspend motion graphics."</p>
-        <div class="test-who">
-          <div class="test-avatar">MW</div>
-          <div>
-            <div class="test-name">Mr. Wilfred</div>
-            <div class="test-role">Xspend</div>
-          </div>
-        </div>
-      </div>
-      <div class="test-card">
-        <span class="test-src"><svg width="14" height="14" viewBox="0 0 24 24" fill="#25D366">
-            <path
-              d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.6-1.28 1.15-1.77 1.2-.45.05-1 .07-1.62-.1-.37-.1-.85-.27-1.46-.53-2.57-1.11-4.24-3.73-4.37-3.9-.13-.17-1.05-1.4-1.05-2.67 0-1.27.66-1.9.9-2.15.24-.26.52-.32.7-.32h.5c.16 0 .38-.02.58.45.22.53.75 1.82.82 1.95.07.13.11.29.02.46-.09.17-.14.28-.27.43-.14.15-.28.34-.4.46-.14.14-.28.29-.12.56.15.28.68 1.13 1.47 1.83 1.01.9 1.86 1.19 2.13 1.32.27.13.43.11.6-.07.16-.17.68-.8.86-1.07.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.27.13.44.2.5.31.08.13.08.7-.14 1.3z" />
-          </svg>WhatsApp</span>
-        <p class="test-quote">"The Favex 2.0 event went really well, and we really appreciate your contributions to the
+<div class="flex items-center gap-3 mt-1">
+<div class="w-[42px] h-[42px] rounded-full bg-blue text-white flex items-center justify-center font-bold text-sm shrink-0">MW</div>
+<div>
+<div class="font-bold text-[14.5px]">Mr. Wilfred</div>
+<div class="text-[12.5px] text-ink-soft">Xspend</div>
+</div>
+</div>
+</div>
+<div class="border border-white/10 rounded-[18px] p-[26px] bg-white text-ink flex flex-col gap-4 transition-transform duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5">
+<span class="text-[11.5px] font-bold text-blue uppercase tracking-[.06em] inline-flex items-center gap-1.5"><svg class="shrink-0" fill="#25D366" height="14" viewbox="0 0 24 24" width="14">
+<path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.6-1.28 1.15-1.77 1.2-.45.05-1 .07-1.62-.1-.37-.1-.85-.27-1.46-.53-2.57-1.11-4.24-3.73-4.37-3.9-.13-.17-1.05-1.4-1.05-2.67 0-1.27.66-1.9.9-2.15.24-.26.52-.32.7-.32h.5c.16 0 .38-.02.58.45.22.53.75 1.82.82 1.95.07.13.11.29.02.46-.09.17-.14.28-.27.43-.14.15-.28.34-.4.46-.14.14-.28.29-.12.56.15.28.68 1.13 1.47 1.83 1.01.9 1.86 1.19 2.13 1.32.27.13.43.11.6-.07.16-.17.68-.8.86-1.07.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.27.13.44.2.5.31.08.13.08.7-.14 1.3z"></path>
+</svg>WhatsApp</span>
+<p class="text-[15px] text-ink leading-[1.65] flex-grow">"The Favex 2.0 event went really well, and we really appreciate your contributions to the
           motion presentations. Thank you for the great work."</p>
-        <div class="test-who">
-          <div class="test-avatar">L</div>
-          <div>
-            <div class="test-name">Mr. Lekan</div>
-            <div class="test-role">Favex</div>
-          </div>
-        </div>
-      </div>
-      <div class="test-card">
-        <span class="test-src">Client Note</span>
-        <p class="test-quote">"Emmanuel brought our brand to life in ways we couldn't have imagined. The motion design
+<div class="flex items-center gap-3 mt-1">
+<div class="w-[42px] h-[42px] rounded-full bg-blue text-white flex items-center justify-center font-bold text-sm shrink-0">L</div>
+<div>
+<div class="font-bold text-[14.5px]">Mr. Lekan</div>
+<div class="text-[12.5px] text-ink-soft">Favex</div>
+</div>
+</div>
+</div>
+<div class="border border-white/10 rounded-[18px] p-[26px] bg-white text-ink flex flex-col gap-4 transition-transform duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5">
+<span class="text-[11.5px] font-bold text-blue uppercase tracking-[.06em] inline-flex items-center gap-1.5">Client Note</span>
+<p class="text-[15px] text-ink leading-[1.65] flex-grow">"Emmanuel brought our brand to life in ways we couldn't have imagined. The motion design
           he delivered instantly elevated how users perceive our platform — trust went up, and so did our conversions."
         </p>
-        <div class="test-who">
-          <div class="test-avatar">AJ</div>
-          <div>
-            <div class="test-name">AJ Alabi</div>
-            <div class="test-role">Founder · Fintech Brand</div>
-          </div>
-        </div>
-      </div>
-      <div class="test-card">
-        <span class="test-src"><svg width="14" height="14" viewBox="0 0 24 24" fill="#25D366">
-            <path
-              d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.6-1.28 1.15-1.77 1.2-.45.05-1 .07-1.62-.1-.37-.1-.85-.27-1.46-.53-2.57-1.11-4.24-3.73-4.37-3.9-.13-.17-1.05-1.4-1.05-2.67 0-1.27.66-1.9.9-2.15.24-.26.52-.32.7-.32h.5c.16 0 .38-.02.58.45.22.53.75 1.82.82 1.95.07.13.11.29.02.46-.09.17-.14.28-.27.43-.14.15-.28.34-.4.46-.14.14-.28.29-.12.56.15.28.68 1.13 1.47 1.83 1.01.9 1.86 1.19 2.13 1.32.27.13.43.11.6-.07.16-.17.68-.8.86-1.07.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.27.13.44.2.5.31.08.13.08.7-.14 1.3z" />
-          </svg>WhatsApp</span>
-        <p class="test-quote">"This is superb Spring, you did an amazing work, thank you."</p>
-        <div class="test-who">
-          <div class="test-avatar">MJ</div>
-          <div>
-            <div class="test-name">Mr. Joe</div>
-            <div class="test-role">Client</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="connect">
-    <div class="wrap">
-      <div class="sechead reveal">
-        <div>
-          <div class="sectag">Find Me Online</div>
-          <h2>Let's connect.</h2>
-        </div>
-        <p style="color:rgba(255,255,255,.55);">Follow the work, send a DM, or just say hi.</p>
-      </div>
-      <div class="connect-grid reveal">
-        <a class="connect-card" href="https://www.instagram.com/_spring_designs1?igsh=cGxxM3Z2c3Z0enJq" target="_blank"
-          rel="noopener">
-          <div>
-            <div class="plat">Instagram</div>
-            <div class="handle">@_spring_designs1</div>
-          </div>
-          <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none">
-            <path d="M7 17L17 7M17 7H8M17 7V16" stroke="white" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </a>
-        <a class="connect-card" href="https://www.linkedin.com/in/emmanuel-adeniran-95b95a240" target="_blank"
-          rel="noopener">
-          <div>
-            <div class="plat">LinkedIn</div>
-            <div class="handle">Emmanuel Adeniran</div>
-          </div>
-          <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none">
-            <path d="M7 17L17 7M17 7H8M17 7V16" stroke="white" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </a>
-        <a class="connect-card" href="https://x.com/The_Eniola1" target="_blank" rel="noopener">
-          <div>
-            <div class="plat">X (Twitter)</div>
-            <div class="handle">@The_Eniola1</div>
-          </div>
-          <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none">
-            <path d="M7 17L17 7M17 7H8M17 7V16" stroke="white" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </a>
-        <a class="connect-card" href="https://vimeo.com/user235137923" target="_blank" rel="noopener">
-          <div>
-            <div class="plat">Vimeo</div>
-            <div class="handle">Eniola Emmanuel</div>
-          </div>
-          <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none">
-            <path d="M7 17L17 7M17 7H8M17 7V16" stroke="white" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="wrap">
-    <div class="cta-final reveal">
-      <div class="sectag" style="color:var(--yellow);">Ready to Start</div>
-      <h2>Let's make something that converts.</h2>
-      <p>Your product deserves to be understood in seconds. Let's talk about what motion can do for your brand.</p>
-      <div class="herobtns">
-        <a class="btn-primary" style="background:#fff;color:var(--blue);box-shadow:none;"
-          href="https://cal.com/emmanuel-adeniran-discoverycall/30min" target="_blank" rel="noopener">Book a Discovery
+<div class="flex items-center gap-3 mt-1">
+<div class="w-[42px] h-[42px] rounded-full bg-blue text-white flex items-center justify-center font-bold text-sm shrink-0">AJ</div>
+<div>
+<div class="font-bold text-[14.5px]">AJ Alabi</div>
+<div class="text-[12.5px] text-ink-soft">Founder · Fintech Brand</div>
+</div>
+</div>
+</div>
+<div class="border border-white/10 rounded-[18px] p-[26px] bg-white text-ink flex flex-col gap-4 transition-transform duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5">
+<span class="text-[11.5px] font-bold text-blue uppercase tracking-[.06em] inline-flex items-center gap-1.5"><svg class="shrink-0" fill="#25D366" height="14" viewbox="0 0 24 24" width="14">
+<path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.6-1.28 1.15-1.77 1.2-.45.05-1 .07-1.62-.1-.37-.1-.85-.27-1.46-.53-2.57-1.11-4.24-3.73-4.37-3.9-.13-.17-1.05-1.4-1.05-2.67 0-1.27.66-1.9.9-2.15.24-.26.52-.32.7-.32h.5c.16 0 .38-.02.58.45.22.53.75 1.82.82 1.95.07.13.11.29.02.46-.09.17-.14.28-.27.43-.14.15-.28.34-.4.46-.14.14-.28.29-.12.56.15.28.68 1.13 1.47 1.83 1.01.9 1.86 1.19 2.13 1.32.27.13.43.11.6-.07.16-.17.68-.8.86-1.07.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.27.13.44.2.5.31.08.13.08.7-.14 1.3z"></path>
+</svg>WhatsApp</span>
+<p class="text-[15px] text-ink leading-[1.65] flex-grow">"This is superb Spring, you did an amazing work, thank you."</p>
+<div class="flex items-center gap-3 mt-1">
+<div class="w-[42px] h-[42px] rounded-full bg-blue text-white flex items-center justify-center font-bold text-sm shrink-0">MJ</div>
+<div>
+<div class="font-bold text-[14.5px]">Mr. Joe</div>
+<div class="text-[12.5px] text-ink-soft">Client</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-[#0F1219] text-white py-[110px]" id="connect">
+<div class="max-w-[1180px] mx-auto px-8 max-[640px]:px-5">
+<div class="flex justify-between items-end gap-6 mb-14 flex-wrap">
+<div>
+<div class="text-blue text-blue font-bold text-[13px] tracking-[.1em] uppercase mb-[14px]">Find Me Online</div>
+<h2 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-[clamp(28px,3.6vw,42px)] max-w-[640px]">Let's connect.</h2>
+</div>
+<p class="text-white/[.6] text-base max-w-[340px] leading-[1.6] text-white/[.55]">Follow the work, send a DM, or just say hi.</p>
+</div>
+<div class="grid grid-cols-4 gap-[18px] max-[860px]:grid-cols-2 max-[480px]:grid-cols-1">
+<a class="no-underline text-inherit group border border-white/[.14] rounded-2xl p-[26px] px-[22px] flex flex-col gap-9 transition-all duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:bg-blue hover:border-blue hover:-translate-y-1.5" href="https://www.instagram.com/_spring_designs1?igsh=cGxxM3Z2c3Z0enJq" rel="noopener" target="_blank">
+<div>
+<div class="font-bold text-[15.5px] text-white">Instagram</div>
+<div class="text-[13px] text-white/[.55] group-hover:text-white/[.85]">@_spring_designs1</div>
+</div>
+<svg class="self-end transition-transform duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" height="18" viewbox="0 0 24 24" width="18">
+<path d="M7 17L17 7M17 7H8M17 7V16" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<a class="no-underline text-inherit group border border-white/[.14] rounded-2xl p-[26px] px-[22px] flex flex-col gap-9 transition-all duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:bg-blue hover:border-blue hover:-translate-y-1.5" href="https://www.linkedin.com/in/emmanuel-adeniran-95b95a240" rel="noopener" target="_blank">
+<div>
+<div class="font-bold text-[15.5px] text-white">LinkedIn</div>
+<div class="text-[13px] text-white/[.55] group-hover:text-white/[.85]">Emmanuel Adeniran</div>
+</div>
+<svg class="self-end transition-transform duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" height="18" viewbox="0 0 24 24" width="18">
+<path d="M7 17L17 7M17 7H8M17 7V16" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<a class="no-underline text-inherit group border border-white/[.14] rounded-2xl p-[26px] px-[22px] flex flex-col gap-9 transition-all duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:bg-blue hover:border-blue hover:-translate-y-1.5" href="https://x.com/The_Eniola1" rel="noopener" target="_blank">
+<div>
+<div class="font-bold text-[15.5px] text-white">X (Twitter)</div>
+<div class="text-[13px] text-white/[.55] group-hover:text-white/[.85]">@The_Eniola1</div>
+</div>
+<svg class="self-end transition-transform duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" height="18" viewbox="0 0 24 24" width="18">
+<path d="M7 17L17 7M17 7H8M17 7V16" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<a class="no-underline text-inherit group border border-white/[.14] rounded-2xl p-[26px] px-[22px] flex flex-col gap-9 transition-all duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:bg-blue hover:border-blue hover:-translate-y-1.5" href="https://vimeo.com/user235137923" rel="noopener" target="_blank">
+<div>
+<div class="font-bold text-[15.5px] text-white">Vimeo</div>
+<div class="text-[13px] text-white/[.55] group-hover:text-white/[.85]">Eniola Emmanuel</div>
+</div>
+<svg class="self-end transition-transform duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" height="18" viewbox="0 0 24 24" width="18">
+<path d="M7 17L17 7M17 7H8M17 7V16" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</div>
+</section>
+<section class="max-w-[1180px] mx-auto px-8 max-[640px]:px-5 py-[110px]">
+<div class="bg-gradient-to-br from-blue to-blue-deep rounded-[28px] py-[74px] px-12 text-center relative overflow-hidden before:content-[''] before:absolute before:bottom-[-120px] before:left-[-60px] before:w-[320px] before:h-[320px] before:bg-[radial-gradient(circle,rgba(255,255,255,.14),transparent_70%)]">
+<div class="text-blue font-bold text-[13px] tracking-[.1em] uppercase mb-[14px] text-yellow">Ready to Start</div>
+<h2 class="font-space font-bold tracking-[-0.02em] leading-[1.05] text-white text-[clamp(28px,4.4vw,48px)] max-w-[640px] mx-auto mb-[18px] relative">Let's make something that converts.</h2>
+<p class="text-white/[.8] text-[16.5px] max-w-[460px] mx-auto mb-9 relative">Your product deserves to be understood in seconds. Let's talk about what motion can do for your brand.</p>
+<div class="justify-center relative flex gap-4 flex-wrap mb-16">
+<a class="no-underline text-inherit bg-blue text-white py-4 px-[30px] rounded-xl font-bold text-[15px] inline-flex items-center gap-[10px] transition-[transform,box-shadow,background] duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] shadow-[0_8px_26px_-8px_rgba(0,89,226,.6)] hover:-translate-y-1 hover:scale-[1.02] hover:bg-blue-deep hover:shadow-[0_14px_34px_-8px_rgba(0,89,226,.7)] bg-white text-blue shadow-none" href="https://cal.com/emmanuel-adeniran-discoverycall/30min" rel="noopener" target="_blank">Book a Discovery
           Call</a>
-        <a class="btn-secondary" href="mailto:adeniranenny02@gmail.com">Email Me Directly</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="wrap">
-    <div class="footwrap">
-      <p>© 2026 Emmanuel Adeniran · Spring. All rights reserved.</p>
-      <div class="foot-links">
-        <a href="mailto:adeniranenny02@gmail.com">Email</a>
-        <a href="https://wa.me/2349166044819" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="#reel">Showreel</a>
-      </div>
-    </div>
-  </footer>
-
-  <a class="wa-float" href="https://wa.me/2349166044819" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-      <path
-        d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.6-1.28 1.15-1.77 1.2-.45.05-1 .07-1.62-.1-.37-.1-.85-.27-1.46-.53-2.57-1.11-4.24-3.73-4.37-3.9-.13-.17-1.05-1.4-1.05-2.67 0-1.27.66-1.9.9-2.15.24-.26.52-.32.7-.32h.5c.16 0 .38-.02.58.45.22.53.75 1.82.82 1.95.07.13.11.29.02.46-.09.17-.14.28-.27.43-.14.15-.28.34-.4.46-.14.14-.28.29-.12.56.15.28.68 1.13 1.47 1.83 1.01.9 1.86 1.19 2.13 1.32.27.13.43.11.6-.07.16-.17.68-.8.86-1.07.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.27.13.44.2.5.31.08.13.08.7-.14 1.3z" />
-    </svg>
-  </a>
-
-  <script src="script.js">
-
-  </script>
+<a class="no-underline text-inherit border-white text-white hover:bg-white hover:border-white hover:text-blue group bg-transparent text-white py-4 px-[30px] rounded-xl font-bold text-[15px] border-2 border-white/[.5] inline-flex items-center gap-[10px] transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:border-blue hover:bg-blue hover:text-white hover:-translate-y-1 hover:scale-[1.02]" href="mailto:adeniranenny02@gmail.com">Email Me Directly</a>
+</div>
+</div>
+</section>
+<footer class="py-11 border-t border-white/20 max-w-[1180px] mx-auto px-8 max-[640px]:px-5">
+<div class="flex justify-between items-center flex-wrap gap-4">
+<p class="text-white/[.7] text-[13.5px]">© 2026 Emmanuel Adeniran · Spring. All rights reserved.</p>
+<div class="flex gap-[22px] text-[13.5px] font-semibold text-white/[.7]">
+<a class="no-underline text-inherit hover:text-blue" href="mailto:adeniranenny02@gmail.com">Email</a>
+<a class="no-underline text-inherit hover:text-blue" href="https://wa.me/2349166044819" rel="noopener" target="_blank">WhatsApp</a>
+<a class="no-underline text-inherit hover:text-blue" href="#reel">Showreel</a>
+</div>
+</div>
+</footer>
+<a aria-label="Chat on WhatsApp" class="no-underline text-inherit fixed bottom-[26px] right-[26px] z-[400] bg-[#25D366] w-[58px] h-[58px] rounded-full flex items-center justify-center shadow-[0_12px_30px_-10px_rgba(37,211,102,.6)] transition-transform duration-[350ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:scale-110 hover:rotate-[6deg]" href="https://wa.me/2349166044819" rel="noopener" target="_blank">
+<svg fill="white" height="28" viewbox="0 0 24 24" width="28">
+<path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.6-1.28 1.15-1.77 1.2-.45.05-1 .07-1.62-.1-.37-.1-.85-.27-1.46-.53-2.57-1.11-4.24-3.73-4.37-3.9-.13-.17-1.05-1.4-1.05-2.67 0-1.27.66-1.9.9-2.15.24-.26.52-.32.7-.32h.5c.16 0 .38-.02.58.45.22.53.75 1.82.82 1.95.07.13.11.29.02.46-.09.17-.14.28-.27.43-.14.15-.28.34-.4.46-.14.14-.28.29-.12.56.15.28.68 1.13 1.47 1.83 1.01.9 1.86 1.19 2.13 1.32.27.13.43.11.6-.07.16-.17.68-.8.86-1.07.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.27.13.44.2.5.31.08.13.08.7-.14 1.3z"></path>
+</svg>
+</a>
+<script src="script-tailwind.js">
+</script>
 </body>
-
 </html>
