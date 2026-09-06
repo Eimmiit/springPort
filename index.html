@@ -65,19 +65,80 @@
   <header class="fixed top-0 left-0 right-0 z-[500] bg-ink/[.82] backdrop-blur-[10px] border-b border-white/[.08]">
     <nav
       class="flex items-center justify-between py-[18px] px-8 max-w-[1180px] mx-auto max-[860px]:py-4 max-[860px]:px-5">
+
+      <!-- LOGO -->
       <a class="no-underline text-inherit font-space font-bold text-[20px] tracking-[-0.01em] flex items-center gap-[6px] text-white"
-        href="#"><span class="w-2 h-2 bg-blue rounded-full inline-block animate-pulseSpring"></span>SPRING.</a>
-      <div class="flex gap-[34px] text-[14.5px] font-semibold">
+        href="#">
+        <span class="w-2 h-2 bg-blue rounded-full inline-block animate-pulseSpring"></span>
+        SPRING.
+      </a>
+
+
+      <!-- DESKTOP NAV -->
+      <div class="flex gap-[34px] text-[14.5px] font-semibold max-[860px]:hidden">
         <a class="no-underline text-inherit" href="#reel">Showreel</a>
         <a class="no-underline text-inherit" href="#services">Services</a>
         <a class="no-underline text-inherit" href="#process">Process</a>
         <a class="no-underline text-inherit" href="#about">About</a>
         <a class="no-underline text-inherit" href="#reviews">Reviews</a>
       </div>
-      <a class="no-underline text-inherit bg-blue text-white py-[11px] px-[22px] rounded-full text-sm font-semibold transition-[transform,background] duration-[300ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] inline-block hover:-translate-y-0.5 hover:scale-[1.03] hover:bg-blue-deep"
-        href="https://cal.com/emmanuel-adeniran-discoverycall/30min" rel="noopener" target="_blank">Start a Project
-        →</a>
+
+
+      <!-- DESKTOP CTA -->
+      <a class="no-underline text-inherit bg-blue text-white py-[11px] px-[22px] rounded-full text-sm font-semibold transition-[transform,background] duration-[300ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] inline-block hover:-translate-y-0.5 hover:scale-[1.03] hover:bg-blue-deep max-[860px]:hidden"
+        href="https://cal.com/emmanuel-adeniran-discoverycall/30min" rel="noopener" target="_blank">
+        Start a Project →
+      </a>
+
+
+      <!-- MOBILE HAMBURGER -->
+      <button id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+        class="hidden max-[860px]:flex flex-col justify-center items-center gap-[5px] w-11 h-11 rounded-lg border border-white/[.12] bg-white/[.05] text-white">
+        <span id="menu-line-1" class="block w-5 h-[2px] bg-white rounded-full transition-transform duration-300"></span>
+        <span id="menu-line-2" class="block w-5 h-[2px] bg-white rounded-full transition-opacity duration-300"></span>
+        <span id="menu-line-3" class="block w-5 h-[2px] bg-white rounded-full transition-transform duration-300"></span>
+      </button>
+
     </nav>
+
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="hidden max-[860px]:px-5 max-[860px]:pb-5">
+      <div class="border-t border-white/[.08] pt-4 flex flex-col gap-1">
+
+        <a class="mobile-link no-underline text-white/[.85] text-[15px] font-semibold py-3 px-3 rounded-lg hover:bg-white/[.06]"
+          href="#reel">
+          Showreel
+        </a>
+
+        <a class="mobile-link no-underline text-white/[.85] text-[15px] font-semibold py-3 px-3 rounded-lg hover:bg-white/[.06]"
+          href="#services">
+          Services
+        </a>
+
+        <a class="mobile-link no-underline text-white/[.85] text-[15px] font-semibold py-3 px-3 rounded-lg hover:bg-white/[.06]"
+          href="#process">
+          Process
+        </a>
+
+        <a class="mobile-link no-underline text-white/[.85] text-[15px] font-semibold py-3 px-3 rounded-lg hover:bg-white/[.06]"
+          href="#about">
+          About
+        </a>
+
+        <a class="mobile-link no-underline text-white/[.85] text-[15px] font-semibold py-3 px-3 rounded-lg hover:bg-white/[.06]"
+          href="#reviews">
+          Reviews
+        </a>
+
+        <a class="no-underline text-white bg-blue text-center py-3 px-5 rounded-xl text-[14px] font-semibold mt-2"
+          href="https://cal.com/emmanuel-adeniran-discoverycall/30min" rel="noopener" target="_blank">
+          Start a Project →
+        </a>
+
+      </div>
+    </div>
+
   </header>
   <section
     class="before:content-[''] before:absolute before:top-[-200px] before:right-[-160px] before:w-[560px] before:h-[560px] before:bg-[radial-gradient(circle,rgba(0,89,226,.22),transparent_70%)] before:rounded-full before:pointer-events-none max-w-[1180px] mx-auto px-8 max-[640px]:px-5 pt-[170px] pb-[90px] relative overflow-hidden">
